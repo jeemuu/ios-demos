@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 int count = 1;
+int pressCount = 0;
 @interface ViewController ()
 
 @end
@@ -71,7 +72,7 @@ int count = 1;
     btn3.backgroundColor = [UIColor cyanColor];
     [btn3 addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
     
-    
+
     [[self view]addSubview:_userText];
     [[self view]addSubview:_passText];
     [[self view]addSubview:btn];
@@ -121,4 +122,35 @@ int count = 1;
     
 }
 
+/*
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    UITabBarController *tabBar = [[UITabBarController alloc]init];
+    tabBar.tabBar.barTintColor = [UIColor greenColor];
+    tabBar.tabBar.tintColor = [UIColor purpleColor];
+    NSMutableArray *array = [[NSMutableArray alloc]init];
+    for(int i=0; i<10; i++){
+        UIViewController *con = [[UIViewController alloc]init];
+        con.view.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0  green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:arc4random()%255/255.0];
+        
+        con.tabBarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemContacts tag:i];
+        //con.tabBarItem.title = [NSString stringWithFormat:@"%d视图", i];
+        //con.tabBarItem.image = [UIImage imageNamed:@"home-or"];
+        //con.tabBarItem.selectedImage = [UIImage imageNamed:@"home-or"];
+        [array addObject:con];
+        
+    }
+    
+    tabBar.viewControllers = array;
+    [self presentViewController:tabBar animated:YES completion:nil];
+}*/
+
+
+- (IBAction)pressButton:(id)sender {
+    
+    pressCount++;
+    
+    NSString *str = [NSString stringWithFormat:@"press count %d", pressCount];
+    [label setText:str];
+}
 @end

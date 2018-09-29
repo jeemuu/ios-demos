@@ -13,8 +13,10 @@
 {
     UITextField* _userText;
     UITextField* _passText;
-    
+    __weak IBOutlet UIButton *_button;
+    __weak IBOutlet UILabel *label;
 }
+- (IBAction)pressButton:(id)sender;
 
 @end
 

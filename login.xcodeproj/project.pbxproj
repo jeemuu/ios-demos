@@ -16,6 +16,7 @@
 		F6225FB521539DE000D3591F /* loginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6225FB421539DE000D3591F /* loginTests.m */; };
 		F6225FC021539DE000D3591F /* loginUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6225FBF21539DE000D3591F /* loginUITests.m */; };
 		F6225FCF2154D3D000D3591F /* RegisController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6225FCE2154D3D000D3591F /* RegisController.m */; };
+		F698429B215E099100E88682 /* tabOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F698429A215E099100E88682 /* tabOneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		F6225FC121539DE000D3591F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6225FCD2154D3D000D3591F /* RegisController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisController.h; sourceTree = "<group>"; };
 		F6225FCE2154D3D000D3591F /* RegisController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisController.m; sourceTree = "<group>"; };
+		F6984297215E096F00E88682 /* login */ = {isa = PBXFileReference; lastKnownFileType = folder; name = login; sourceTree = "<group>"; };
+		F6984299215E099100E88682 /* tabOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabOneViewController.h; sourceTree = "<group>"; };
+		F698429A215E099100E88682 /* tabOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabOneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		F6225F9A21539DE000D3591F /* login */ = {
 			isa = PBXGroup;
 			children = (
+				F6984297215E096F00E88682 /* login */,
 				F6225F9B21539DE000D3591F /* AppDelegate.h */,
 				F6225F9C21539DE000D3591F /* AppDelegate.m */,
 				F6225F9E21539DE000D3591F /* ViewController.h */,
@@ -115,6 +120,8 @@
 				F6225FAA21539DE000D3591F /* main.m */,
 				F6225FCD2154D3D000D3591F /* RegisController.h */,
 				F6225FCE2154D3D000D3591F /* RegisController.m */,
+				F6984299215E099100E88682 /* tabOneViewController.h */,
+				F698429A215E099100E88682 /* tabOneViewController.m */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -245,6 +252,7 @@
 			files = (
 				F6225FA821539DE000D3591F /* LaunchScreen.storyboard in Resources */,
 				F6225FA521539DE000D3591F /* Assets.xcassets in Resources */,
+				F6984298215E096F00E88682 /* login in Resources */,
 				F6225FA321539DE000D3591F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F698429B215E099100E88682 /* tabOneViewController.m in Sources */,
 				F6225FA021539DE000D3591F /* ViewController.m in Sources */,
 				F6225FAB21539DE000D3591F /* main.m in Sources */,
 				F6225FCF2154D3D000D3591F /* RegisController.m in Sources */,
